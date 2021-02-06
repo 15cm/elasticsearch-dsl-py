@@ -210,3 +210,8 @@ def test_object_constructor():
 
     with pytest.raises(ValidationException):
         field.Object(doc_class=Inner, dynamic=False)
+
+
+def test_wildcard():
+    f = field.Wildcard(null_value="null_substitution")
+    assert f.to_dict() == {"null_value": "null_substitution", "type": "wildcard"}

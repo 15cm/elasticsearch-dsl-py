@@ -73,6 +73,7 @@ from .field import (
     SparseVector,
     Text,
     TokenCount,
+    Wildcard,
     construct_field,
 )
 from .function import SF
@@ -153,6 +154,7 @@ __all__ = [
     "UnknownDslObject",
     "UpdateByQuery",
     "ValidationException",
+    "Wildcard",
     "analyzer",
     "char_filter",
     "connections",

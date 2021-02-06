@@ -521,3 +521,7 @@ class TokenCount(Field):
 
 class Murmur3(Field):
     name = "murmur3"
+
+
+class Wildcard(Field):
+    name = "wildcard"
